@@ -1,8 +1,9 @@
 const apiKey = "a9898641566017ef04e6d284b80e1274";
-const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=Bangalore";
+const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-async function checkWeather(){
-    const response = await fetch(apiUrl + `&appid=${apiKey}`);
+
+async function checkWeather(city){
+    const response = await fetch(apiUrl +city+ `&appid=${apiKey}`);
     var data = await response.json();
     
     document.querySelector(".city").innerHTML = data.name;
@@ -15,4 +16,5 @@ async function checkWeather(){
     
     console.log(data);
 }
-checkWeather();
+
+checkWeather("Bangalore");

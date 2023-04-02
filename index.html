@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link rel="Stylesheet" href="style.css">
     <title>Climate Tracker</title>
 </head>
@@ -20,11 +23,15 @@
     </div>
 
     <div class="main-details">
-        <div class="city" style="padding:10px"></div>
+        <div class="city-weather">
+            <img id="weather-icon" src="" alt=""> <!-- doesnt work with "class" -->
+            <div class="city" style="padding:10px"></div>
+        </div>
         <div class="temp"></div>
-        <div class="desc" style="font-size: 20px;"></div>
+        <div class="desc" style="font-size: 20px; color:#c0c0c0"></div>
         <div class="cols">
-            <div class="humidity"><p class="hum-perc" ></p></div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
         </div>
     </div>
 

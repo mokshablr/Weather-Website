@@ -1,4 +1,4 @@
-const apiKey = "bcb5b5ee884b1b5ce803e26025323053";
+const apiKey = "~";
 const apiUrl = "http://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 function checkPrefix( weatherId,  pre)
@@ -41,7 +41,7 @@ async function checkWeather(city){
         document.getElementById("weather-icon").src = "/weather-icons/sun.svg";
     }
     else if(checkPrefix(weatherId, 80)){
-        document.getElementById("weather-icon").src = "/weather-iconscloud-sun.svg";
+        document.getElementById("weather-icon").src = "/weather-icons/cloud-sun.svg";
     }
     
     document.querySelector(".city").innerHTML = data.name;
